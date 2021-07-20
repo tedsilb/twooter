@@ -4,7 +4,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/tedsilb/twooter/badge)](https://www.codefactor.io/repository/github/tedsilb/twooter)
 
-Various Go projects I work on from time to time.
+Angular app talking to a gRPC backend. Prototype :)
 
 ## Building
 
@@ -12,7 +12,7 @@ Various Go projects I work on from time to time.
 
 `cd frontend/`
 
-Frontend is built using Angular.
+Frontend is built in Angular.
 
 - To build the project:
   - `ng build`

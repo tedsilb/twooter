@@ -1,0 +1,38 @@
+# This workflow will do a clean install of node dependencies, run a prod build, and run all tests
+# For more info: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: actions/cache@v2.1.5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: cd frontend/
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build:prod
+      - run: npm run test:ci

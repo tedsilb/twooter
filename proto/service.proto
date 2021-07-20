@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package twooter;
+
+import "proto/resource.proto";
+
+option go_package = "github.com/tedsilb/twooter/proto/twooterpb";
+
+service Twooter {
+  // Creates a Twoot.
+  rpc CreateTwoot(CreateTwootRequest) returns (Twoot) {}
+
+  // List all Twoots.
+  rpc ListTwoots(ListTwootsRequest) returns (ListTwootsResponse) {}
+}
+
+message CreateTwootRequest {
+  // Twoot to create.
+  Twoot twoot = 1;
+}
+
+message ListTwootsRequest {}
+
+message ListTwootsResponse {
+  // The Twoots.
+  repeated Twoot twoots = 1;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package twooter;
+
+option go_package = "github.com/tedsilb/twooter/proto/twooterpb";
+
+message Twoot {
+  // Unique identifier of the Twoot.
+  string id = 1;
+
+  // Creator of the Twoot.
+  User creator = 2;
+
+  // Message of the Twoot.
+  string message = 3;
+}
+
+message User {
+  // Unique identifier of a User.
+  string id = 1;
+
+  // Public handle of the User.
+  string handle = 2;
+
+  // Email address of the User.
+  string email = 3;
+}

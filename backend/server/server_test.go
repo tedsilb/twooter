@@ -4,6 +4,8 @@ import (
 	"context"
 	"testing"
 
+	twootdao "github.com/tedsilb/twooter/backend/dao/twoot"
+	util "github.com/tedsilb/twooter/backend/dao/util"
 	pb "github.com/tedsilb/twooter/proto/twooterpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -75,7 +77,7 @@ func TestCreateTwoot(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
 			ctx := context.Background()
-			n := now()
+			n := util.Now()
 			twooter := &server{}
 
 			got, err := twooter.CreateTwoot(ctx, tc.req)
@@ -177,6 +179,6 @@ func TestListTwoots(t *testing.T) {
 				}
 			}
 		})
-		twoots = nil
+		twootdao.Clear()
 	}
 }

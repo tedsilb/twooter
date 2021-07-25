@@ -7,8 +7,10 @@ import (
 	"net"
 	"time"
 
+	"github.com/tedsilb/twooter/backend/validate"
 	pb "github.com/tedsilb/twooter/proto/twooterpb"
 	"google.golang.org/grpc"
+	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 const (
@@ -33,15 +35,28 @@ func generateId() string {
 	return string(b)
 }
 
+func now() *timestamppb.Timestamp {
+	t := time.Now()
+	return &timestamppb.Timestamp{
+		Seconds: t.Unix(),
+		Nanos:   int32(t.UnixNano() - (t.Unix() * 1000000000)),
+	}
+}
+
 // server is used to implement TwooterServer.
 type server struct {
 	pb.TwooterServer
 }
 
 func (s *server) CreateTwoot(ctx context.Context, req *pb.CreateTwootRequest) (*pb.Twoot, error) {
+	if err := validate.CreateTwootRequest(req); err != nil {
+		return nil, err
+	}
+
 	t := req.GetTwoot()
-	log.Printf("Creating: %v", t)
 	t.Id = generateId()
+	t.CreateTime = now()
+
 	twoots = append(twoots, t)
 	log.Printf("Created: %v", t)
 	return t, nil

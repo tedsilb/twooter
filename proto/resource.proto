@@ -4,6 +4,8 @@ package twooter;
 
 option go_package = "github.com/tedsilb/twooter/proto/twooterpb";
 
+import "google/protobuf/timestamp.proto";
+
 message Twoot {
   // Unique identifier of the Twoot.
   string id = 1;
@@ -11,8 +13,11 @@ message Twoot {
   // Creator of the Twoot.
   User creator = 2;
 
+  // Time the Twoot was created at.
+  .google.protobuf.Timestamp create_time = 3;
+
   // Message of the Twoot.
-  string message = 3;
+  string message = 4;
 }
 
 message User {

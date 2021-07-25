@@ -6,8 +6,21 @@ go_library(
     importpath = "github.com/tedsilb/twooter/backend/server",
     visibility = ["//visibility:private"],
     deps = [
-        "//proto:go_default_library",
+        "//backend/validate:validate_lib",
+        "//proto:twooterpb",
         "@org_golang_google_grpc//:go_default_library",
+        "@org_golang_google_protobuf//types/known/timestamppb:go_default_library",
+    ],
+)
+
+go_test(
+    name = "server_test",
+    srcs = ["server_test.go"],
+    embed = [":server_lib"],
+    deps = [
+        "//proto:twooterpb",
+        "@org_golang_google_protobuf//proto:go_default_library",
+        "@org_golang_google_protobuf//types/known/timestamppb:go_default_library",
     ],
 )
 
@@ -15,10 +28,4 @@ go_binary(
     name = "server",
     embed = [":server_lib"],
     visibility = ["//visibility:public"],
-)
-
-go_test(
-    name = "server_test",
-    srcs = ["server_test.go"],
-    embed = [":server_lib"],
 )

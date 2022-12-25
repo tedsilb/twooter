@@ -1,12 +1,14 @@
-package twootdao
+package dao
 
 import (
 	"fmt"
 
-	util "github.com/tedsilb/twooter/backend/dao/util"
+	"github.com/tedsilb/twooter/backend/dao/util"
 	pb "github.com/tedsilb/twooter/proto/twooterpb"
+
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
+	tspb "google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
@@ -22,7 +24,7 @@ func Clear() error {
 // Create creates a Twoot.
 func Create(t *pb.Twoot) (*pb.Twoot, error) {
 	t.Id = util.GenerateId()
-	t.CreateTime = util.Now()
+	t.CreateTime = tspb.Now()
 
 	twoots = append(twoots, t)
 

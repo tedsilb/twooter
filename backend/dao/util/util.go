@@ -1,10 +1,8 @@
-package daoutil
+package util
 
 import (
 	"math/rand"
 	"time"
-
-	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
@@ -21,12 +19,4 @@ func GenerateId() string {
 		b[i] = letterRunes[rand.Intn(len(letterRunes))]
 	}
 	return string(b)
-}
-
-func Now() *timestamppb.Timestamp {
-	n := time.Now()
-	return &timestamppb.Timestamp{
-		Seconds: n.Unix(),
-		Nanos:   int32(n.UnixNano() - (n.Unix() * 1000000000)),
-	}
 }

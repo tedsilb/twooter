@@ -5,9 +5,10 @@ import (
 	"log"
 	"net"
 
-	twootdao "github.com/tedsilb/twooter/backend/dao/twoot"
+	"github.com/tedsilb/twooter/backend/dao"
 	"github.com/tedsilb/twooter/backend/validate"
 	pb "github.com/tedsilb/twooter/proto/twooterpb"
+
 	"google.golang.org/grpc"
 )
 
@@ -25,7 +26,7 @@ func (s server) CreateTwoot(ctx context.Context, req *pb.CreateTwootRequest) (*p
 		return nil, err
 	}
 
-	t, err := twootdao.Create(req.GetTwoot())
+	t, err := dao.Create(req.GetTwoot())
 	if err != nil {
 		return nil, err
 	}
@@ -35,7 +36,7 @@ func (s server) CreateTwoot(ctx context.Context, req *pb.CreateTwootRequest) (*p
 }
 
 func (s server) ListTwoots(ctx context.Context, req *pb.ListTwootsRequest) (*pb.ListTwootsResponse, error) {
-	twoots, err := twootdao.List()
+	twoots, err := dao.List()
 	if err != nil {
 		return nil, err
 	}

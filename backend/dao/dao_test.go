@@ -1,9 +1,11 @@
-package twootdao
+package dao
 
 import (
-	pb "github.com/tedsilb/twooter/proto/twooterpb"
-	"google.golang.org/protobuf/proto"
 	"testing"
+
+	pb "github.com/tedsilb/twooter/proto/twooterpb"
+
+	"google.golang.org/protobuf/proto"
 )
 
 var (

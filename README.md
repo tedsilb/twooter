@@ -27,13 +27,9 @@ Frontend is built in Angular.
 
 `cd backend/`
 
-Backend is written in Go and built using [Bazel](https://bazel.build).
+Backend is written in Go.
 
 - To build the project:
-  - `bazel build ...`
+  - `go build ./...`
 - To run tests:
-  - `bazel test ...`
-
-Build rules are auto-generated using [Gazelle](https://github.com/bazelbuild/bazel-gazelle).
-
-To update build rules, run `bazel run //:gazelle`
+  - `go test ./...`

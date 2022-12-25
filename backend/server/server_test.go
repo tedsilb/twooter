@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	twootdao "github.com/tedsilb/twooter/backend/dao/twoot"
-	util "github.com/tedsilb/twooter/backend/dao/util"
+	twootdao "github.com/tedsilb/twooter/backend/dao"
 	pb "github.com/tedsilb/twooter/proto/twooterpb"
-	"google.golang.org/protobuf/types/known/timestamppb"
+
+	tspb "google.golang.org/protobuf/types/known/timestamppb"
 )
 
 func TestCreateTwoot(t *testing.T) {
@@ -54,7 +54,7 @@ func TestCreateTwoot(t *testing.T) {
 						Handle: "@someone",
 						Email:  "someone@email.com",
 					},
-					CreateTime: &timestamppb.Timestamp{Seconds: 123456},
+					CreateTime: &tspb.Timestamp{Seconds: 123456},
 					Message:    "hello there :)",
 				},
 			},
@@ -77,7 +77,7 @@ func TestCreateTwoot(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
 			ctx := context.Background()
-			n := util.Now()
+			n := tspb.Now()
 			twooter := &server{}
 
 			got, err := twooter.CreateTwoot(ctx, tc.req)

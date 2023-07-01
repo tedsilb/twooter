@@ -22,7 +22,7 @@
     "@angular/router": "^16.0.4",
     "eslint": "^8.39.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-jsdoc": "^46.4.3",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.5.0",

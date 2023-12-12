@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "twooter:build:production"
+              "buildTarget": "twooter:build:production"
             },
             "development": {
-              "browserTarget": "twooter:build:development"
+              "buildTarget": "twooter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "twooter:build"
+            "buildTarget": "twooter:build"
           }
         },
         "test": {

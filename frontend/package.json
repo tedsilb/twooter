@@ -14,7 +14,7 @@
   "preinstall": "npx only-allow pnpm",
   "dependencies": {
     "@angular/animations": "^17.3.2",
-    "@angular/common": "^17.3.2",
+    "@angular/common": "^17.3.7",
     "@angular/compiler": "^17.3.2",
     "@angular/core": "^17.3.2",
     "@angular/forms": "^17.3.2",

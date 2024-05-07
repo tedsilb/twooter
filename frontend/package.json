@@ -11,6 +11,7 @@
     "lint": "ng lint"
   },
   "private": true,
+  "preinstall": "npx only-allow pnpm",
   "dependencies": {
     "@angular/animations": "^17.3.2",
     "@angular/common": "^17.3.2",

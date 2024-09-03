@@ -27,7 +27,7 @@
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "rxjs": "~7.8.1",
     "tslib": "^2.7.0",
-    "zone.js": "~0.14.7"
+    "zone.js": "~0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.1.3",

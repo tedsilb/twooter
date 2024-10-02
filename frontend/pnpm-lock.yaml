@@ -61,8 +61,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(eslint@8.57.0)(typescript@5.4.5)
       '@angular-eslint/eslint-plugin':
-        specifier: 18.2.0
-        version: 18.2.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
+        specifier: 18.3.1
+        version: 18.3.1(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@angular-eslint/eslint-plugin-template':
         specifier: 18.3.1
         version: 18.3.1(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -202,9 +202,6 @@ packages:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
 
-  '@angular-eslint/bundled-angular-compiler@18.2.0':
-    resolution: {integrity: sha512-p/YvlvDJscSAbNOOAbT/BRdscEfWpQunUK+KuWM6/PXL07tTVae5dmp8B8A5am7Cxvp+ZVLVLZG4LFYB1TX1cw==}
-
   '@angular-eslint/bundled-angular-compiler@18.3.0':
     resolution: {integrity: sha512-v/59FxUKnMzymVce99gV43huxoqXWMb85aKvzlNvLN+ScDu6ZE4YMiTQNpfapVL2lkxhs0uwB3jH17EYd5TcsA==}
 
@@ -225,15 +222,15 @@ packages:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
 
-  '@angular-eslint/eslint-plugin@18.2.0':
-    resolution: {integrity: sha512-vJ7pstQPqCqkvMrEsjjocvHdPBl/frs0+fqkckog2Sq0QisBEjUPkbImvId6dw7JzxSDSvttdAklakF97CE4VA==}
+  '@angular-eslint/eslint-plugin@18.3.0':
+    resolution: {integrity: sha512-Vl7gfPMXxvtHTjYdlzR161aj5xrqW6T57wd8ToQ7Gqzm0qHGfY6kE4SQobUa2LCYckTNSlv+zXe48C4ah/dSjw==}
     peerDependencies:
       '@typescript-eslint/utils': ^7.11.0 || ^8.0.0
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
 
-  '@angular-eslint/eslint-plugin@18.3.0':
-    resolution: {integrity: sha512-Vl7gfPMXxvtHTjYdlzR161aj5xrqW6T57wd8ToQ7Gqzm0qHGfY6kE4SQobUa2LCYckTNSlv+zXe48C4ah/dSjw==}
+  '@angular-eslint/eslint-plugin@18.3.1':
+    resolution: {integrity: sha512-MP4Nm+SHboF8KdnN0KpPEGAaTTzDLPm3+S/4W3Mg8onqWCyadyd4mActh9mK/pvCj8TVlb/SW1zeTtdMYhwonw==}
     peerDependencies:
       '@typescript-eslint/utils': ^7.11.0 || ^8.0.0
       eslint: ^8.57.0 || ^9.0.0
@@ -248,13 +245,6 @@ packages:
   '@angular-eslint/template-parser@18.3.0':
     resolution: {integrity: sha512-1mUquqcnugI4qsoxcYZKZ6WMi6RPelDcJZg2YqGyuaIuhWmi3ZqJZLErSSpjP60+TbYZu7wM8Kchqa1bwJtEaQ==}
     peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-      typescript: '*'
-
-  '@angular-eslint/utils@18.2.0':
-    resolution: {integrity: sha512-g+b0L4RCZaKYPz4bGRRifo7g5guVJi2kUWymlDYmCkq3NhZng1HQQbNpVF1n5o034zT5lnaC5HENwaKIZ1Y37Q==}
-    peerDependencies:
-      '@typescript-eslint/utils': ^7.11.0 || ^8.0.0
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
 
@@ -5018,8 +5008,6 @@ snapshots:
       eslint: 8.57.0
       typescript: 5.4.5
 
-  '@angular-eslint/bundled-angular-compiler@18.2.0': {}
-
   '@angular-eslint/bundled-angular-compiler@18.3.0': {}
 
   '@angular-eslint/bundled-angular-compiler@18.3.1': {}
@@ -5044,18 +5032,18 @@ snapshots:
       eslint: 8.57.0
       typescript: 5.4.5
 
-  '@angular-eslint/eslint-plugin@18.2.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
-    dependencies:
-      '@angular-eslint/bundled-angular-compiler': 18.2.0
-      '@angular-eslint/utils': 18.2.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
-      '@typescript-eslint/utils': 7.15.0(eslint@8.57.0)(typescript@5.4.5)
-      eslint: 8.57.0
-      typescript: 5.4.5
-
   '@angular-eslint/eslint-plugin@18.3.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@angular-eslint/bundled-angular-compiler': 18.3.0
       '@angular-eslint/utils': 18.3.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
+      '@typescript-eslint/utils': 7.15.0(eslint@8.57.0)(typescript@5.4.5)
+      eslint: 8.57.0
+      typescript: 5.4.5
+
+  '@angular-eslint/eslint-plugin@18.3.1(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
+    dependencies:
+      '@angular-eslint/bundled-angular-compiler': 18.3.1
+      '@angular-eslint/utils': 18.3.1(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/utils': 7.15.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
       typescript: 5.4.5
@@ -5079,13 +5067,6 @@ snapshots:
       '@angular-eslint/bundled-angular-compiler': 18.3.0
       eslint: 8.57.0
       eslint-scope: 8.0.2
-      typescript: 5.4.5
-
-  '@angular-eslint/utils@18.2.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
-    dependencies:
-      '@angular-eslint/bundled-angular-compiler': 18.2.0
-      '@typescript-eslint/utils': 7.15.0(eslint@8.57.0)(typescript@5.4.5)
-      eslint: 8.57.0
       typescript: 5.4.5
 
   '@angular-eslint/utils@18.3.0(@typescript-eslint/utils@7.15.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':

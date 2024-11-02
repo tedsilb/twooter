@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd frontend
-npm run start
+pnpm run start

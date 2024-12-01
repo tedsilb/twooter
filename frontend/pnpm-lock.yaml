@@ -39,8 +39,8 @@ importers:
         specifier: 2.31.0
         version: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)
       eslint-plugin-jsdoc:
-        specifier: 48.10.2
-        version: 48.10.2(eslint@8.57.1)
+        specifier: 50.6.0
+        version: 50.6.0(eslint@8.57.1)
       eslint-plugin-prefer-arrow:
         specifier: ^1.2.3
         version: 1.2.3(eslint@8.57.1)
@@ -847,8 +847,8 @@ packages:
     resolution: {integrity: sha512-4B4OijXeVNOPZlYA2oEwWOTkzyltLao+xbotHQeqN++Rv27Y6s818+n2Qkp8q+Fxhn0t/5lA5X1Mxktud8eayQ==}
     engines: {node: '>=14.17.0'}
 
-  '@es-joy/jsdoccomment@0.46.0':
-    resolution: {integrity: sha512-C3Axuq1xd/9VqFZpW4YAzOx5O9q/LP46uIQy/iNDpHG3fmPa6TBtvfglMCs3RBiBxAIi0Go97r8+jvTt55XMyQ==}
+  '@es-joy/jsdoccomment@0.49.0':
+    resolution: {integrity: sha512-xjZTSFgECpb9Ohuk5yMX5RhUEbfeQcuOp8IF60e+wyzWEF0M5xeSgqsfLtvPEX8BIyOX9saZqzuGPmZ8oWc+5Q==}
     engines: {node: '>=16'}
 
   '@esbuild/aix-ppc64@0.21.5':
@@ -2702,8 +2702,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jsdoc@48.10.2:
-    resolution: {integrity: sha512-xTkf/MmEeVrTbezc6kDqCJmK9RcseIKo8X4oyoDCMvV4LY8dqrQi8kmfRrv9n0gNBkCclevaOh2Lkmu6Fs8SLg==}
+  eslint-plugin-jsdoc@50.6.0:
+    resolution: {integrity: sha512-tCNp4fR79Le3dYTPB0dKEv7yFyvGkUCa+Z3yuTrrNGGOxBlXo9Pn0PEgroOZikUQOGjxoGMVKNjrOHcYEdfszg==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -3390,8 +3390,8 @@ packages:
   jsbn@1.1.0:
     resolution: {integrity: sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==}
 
-  jsdoc-type-pratt-parser@4.0.0:
-    resolution: {integrity: sha512-YtOli5Cmzy3q4dP26GraSOeAhqecewG04hoO8DY56CH4KJ9Fvv5qKWUCCo3HZob7esJQHCv6/+bnTy72xZZaVQ==}
+  jsdoc-type-pratt-parser@4.1.0:
+    resolution: {integrity: sha512-Hicd6JK5Njt2QB6XYFS7ok9e37O8AYk3jTcppG4YVQnYjOemymvTcmc7OWsmq/Qqj5TdRFO5/x/tIPmBeRtGHg==}
     engines: {node: '>=12.0.0'}
 
   jsesc@3.0.2:
@@ -5052,7 +5052,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1900.2(chokidar@4.0.1)
-      '@angular-devkit/build-webpack': 0.1900.2(chokidar@4.0.1)(webpack-dev-server@5.1.0(webpack@5.96.1))(webpack@5.96.1(esbuild@0.24.0))
+      '@angular-devkit/build-webpack': 0.1900.2(chokidar@4.0.1)(webpack-dev-server@5.1.0(webpack@5.96.1(esbuild@0.24.0)))(webpack@5.96.1(esbuild@0.24.0))
       '@angular-devkit/core': 19.0.2(chokidar@4.0.1)
       '@angular/build': 19.0.2(@angular/compiler-cli@19.0.1(@angular/compiler@19.0.1(@angular/core@19.0.1(rxjs@7.8.1)(zone.js@0.15.0)))(typescript@5.6.3))(@angular/compiler@19.0.1(@angular/core@19.0.1(rxjs@7.8.1)(zone.js@0.15.0)))(@types/node@22.8.6)(chokidar@4.0.1)(less@4.2.0)(postcss@8.4.49)(terser@5.36.0)(typescript@5.6.3)
       '@angular/compiler-cli': 19.0.1(@angular/compiler@19.0.1(@angular/core@19.0.1(rxjs@7.8.1)(zone.js@0.15.0)))(typescript@5.6.3)
@@ -5103,8 +5103,8 @@ snapshots:
       tslib: 2.8.1
       typescript: 5.6.3
       webpack: 5.96.1(esbuild@0.24.0)
-      webpack-dev-middleware: 7.4.2(webpack@5.96.1)
-      webpack-dev-server: 5.1.0(webpack@5.96.1)
+      webpack-dev-middleware: 7.4.2(webpack@5.96.1(esbuild@0.24.0))
+      webpack-dev-server: 5.1.0(webpack@5.96.1(esbuild@0.24.0))
       webpack-merge: 6.0.1
       webpack-subresource-integrity: 5.1.0(webpack@5.96.1(esbuild@0.24.0))
     optionalDependencies:
@@ -5130,12 +5130,12 @@ snapshots:
       - vite
       - webpack-cli
 
-  '@angular-devkit/build-webpack@0.1900.2(chokidar@4.0.1)(webpack-dev-server@5.1.0(webpack@5.96.1))(webpack@5.96.1(esbuild@0.24.0))':
+  '@angular-devkit/build-webpack@0.1900.2(chokidar@4.0.1)(webpack-dev-server@5.1.0(webpack@5.96.1(esbuild@0.24.0)))(webpack@5.96.1(esbuild@0.24.0))':
     dependencies:
       '@angular-devkit/architect': 0.1900.2(chokidar@4.0.1)
       rxjs: 7.8.1
       webpack: 5.96.1(esbuild@0.24.0)
-      webpack-dev-server: 5.1.0(webpack@5.96.1)
+      webpack-dev-server: 5.1.0(webpack@5.96.1(esbuild@0.24.0))
     transitivePeerDependencies:
       - chokidar
 
@@ -6036,11 +6036,11 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.3': {}
 
-  '@es-joy/jsdoccomment@0.46.0':
+  '@es-joy/jsdoccomment@0.49.0':
     dependencies:
       comment-parser: 1.4.1
       esquery: 1.6.0
-      jsdoc-type-pratt-parser: 4.0.0
+      jsdoc-type-pratt-parser: 4.1.0
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -7922,9 +7922,9 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsdoc@48.10.2(eslint@8.57.1):
+  eslint-plugin-jsdoc@50.6.0(eslint@8.57.1):
     dependencies:
-      '@es-joy/jsdoccomment': 0.46.0
+      '@es-joy/jsdoccomment': 0.49.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
       debug: 4.3.7
@@ -8689,7 +8689,7 @@ snapshots:
 
   jsbn@1.1.0: {}
 
-  jsdoc-type-pratt-parser@4.0.0: {}
+  jsdoc-type-pratt-parser@4.1.0: {}
 
   jsesc@3.0.2: {}
 
@@ -10067,7 +10067,7 @@ snapshots:
       mkdirp: 3.0.1
       yallist: 5.0.0
 
-  terser-webpack-plugin@5.3.10(esbuild@0.24.0)(webpack@5.96.1):
+  terser-webpack-plugin@5.3.10(esbuild@0.24.0)(webpack@5.96.1(esbuild@0.24.0)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -10281,7 +10281,7 @@ snapshots:
   weak-lru-cache@1.2.2:
     optional: true
 
-  webpack-dev-middleware@7.4.2(webpack@5.96.1):
+  webpack-dev-middleware@7.4.2(webpack@5.96.1(esbuild@0.24.0)):
     dependencies:
       colorette: 2.0.20
       memfs: 4.14.0
@@ -10292,7 +10292,7 @@ snapshots:
     optionalDependencies:
       webpack: 5.96.1(esbuild@0.24.0)
 
-  webpack-dev-server@5.1.0(webpack@5.96.1):
+  webpack-dev-server@5.1.0(webpack@5.96.1(esbuild@0.24.0)):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -10320,7 +10320,7 @@ snapshots:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 7.4.2(webpack@5.96.1)
+      webpack-dev-middleware: 7.4.2(webpack@5.96.1(esbuild@0.24.0))
       ws: 8.18.0
     optionalDependencies:
       webpack: 5.96.1(esbuild@0.24.0)
@@ -10365,7 +10365,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.24.0)(webpack@5.96.1)
+      terser-webpack-plugin: 5.3.10(esbuild@0.24.0)(webpack@5.96.1(esbuild@0.24.0))
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:

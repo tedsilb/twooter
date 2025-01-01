@@ -70,8 +70,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(@typescript-eslint/types@7.18.0)(@typescript-eslint/utils@7.18.0(eslint@8.57.1)(typescript@5.6.3))(chokidar@4.0.1)(eslint@8.57.1)(typescript@5.6.3)
       '@angular-eslint/template-parser':
-        specifier: 19.0.0
-        version: 19.0.0(eslint@8.57.1)(typescript@5.6.3)
+        specifier: 19.0.2
+        version: 19.0.2(eslint@8.57.1)(typescript@5.6.3)
       '@angular/cli':
         specifier: ^19.0.2
         version: 19.0.2(@types/node@22.10.3)(chokidar@4.0.1)
@@ -231,8 +231,8 @@ packages:
   '@angular-eslint/schematics@19.0.0':
     resolution: {integrity: sha512-fle4SMxjI+91y5eR6hVG7yhzJHAw87LudHw918hGUVn2INIAW1TTuuQNoah8kNg9I6ICIDat26IenD4nOau6Gg==}
 
-  '@angular-eslint/template-parser@19.0.0':
-    resolution: {integrity: sha512-bOLMNBQbrLMujGWSda0SF8ka7snQ9Uzxie1dr5LquI104p2J4Wt90DOoaWzhNaBBwedt3WXmhSHmvvR9720kHA==}
+  '@angular-eslint/template-parser@19.0.2':
+    resolution: {integrity: sha512-z3rZd2sBfuYcFf9rGDsB2zz2fbGX8kkF+0ftg9eocyQmzWrlZHFmuw9ha7oP/Mz8gpblyCS/aa1U/Srs6gz0UQ==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
@@ -5252,9 +5252,9 @@ snapshots:
       - eslint
       - typescript
 
-  '@angular-eslint/template-parser@19.0.0(eslint@8.57.1)(typescript@5.6.3)':
+  '@angular-eslint/template-parser@19.0.2(eslint@8.57.1)(typescript@5.6.3)':
     dependencies:
-      '@angular-eslint/bundled-angular-compiler': 19.0.0
+      '@angular-eslint/bundled-angular-compiler': 19.0.2
       eslint: 8.57.1
       eslint-scope: 8.2.0
       typescript: 5.6.3

@@ -1,6 +1,6 @@
 module github.com/tedsilb/twooter
 
-go 1.25.1
+go 1.25.4
 
 require (
 	google.golang.org/grpc v1.76.0
@@ -8,8 +8,8 @@ require (
 )
 
 require (
-	golang.org/x/net v0.44.0 // indirect
-	golang.org/x/sys v0.36.0 // indirect
-	golang.org/x/text v0.29.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251002232023-7c0ddcbb5797 // indirect
+	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba // indirect
 )

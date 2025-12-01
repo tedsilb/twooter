@@ -50,10 +50,10 @@ importers:
         version: 20.6.0(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       '@angular-eslint/eslint-plugin-template':
         specifier: 20.6.0
-        version: 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.46.4)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
+        version: 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.48.0)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       '@angular-eslint/schematics':
         specifier: 20.6.0
-        version: 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.46.4)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(chokidar@4.0.3)(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
+        version: 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.48.0)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(chokidar@4.0.3)(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       '@angular-eslint/template-parser':
         specifier: 20.6.0
         version: 20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
@@ -85,8 +85,8 @@ importers:
         specifier: 2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))
       eslint-plugin-jsdoc:
-        specifier: 61.2.0
-        version: 61.2.0(eslint@9.39.1(jiti@1.21.7))
+        specifier: 61.4.1
+        version: 61.4.1(eslint@9.39.1(jiti@1.21.7))
       eslint-plugin-prefer-arrow:
         specifier: ^1.2.3
         version: 1.2.3(eslint@9.39.1(jiti@1.21.7))
@@ -1378,6 +1378,10 @@ packages:
     resolution: {integrity: sha512-USjyxm3gQEePdUwJBFjjGNG18xY9A2grDVGuk7/9AkjIF1L+ZrVnwR5VAU5JXtUnBL/Nwt3H31KlRDaksnM7/w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@typescript-eslint/types@8.48.0':
+    resolution: {integrity: sha512-cQMcGQQH7kwKoVswD1xdOytxQR60MWKM1di26xSUtxehaDs/32Zpqsu5WJlXTtTTqyAVK8R7hvsUnIXRS+bjvA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@typescript-eslint/typescript-estree@8.46.4':
     resolution: {integrity: sha512-7oV2qEOr1d4NWNmpXLR35LvCfOkTNymY9oyW+lUHkmCno7aOmIf/hMaydnJBUTBMRCOGZh8YjkFOc8dadEoNGA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1958,8 +1962,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jsdoc@61.2.0:
-    resolution: {integrity: sha512-Pky3YKWPOcDGi4TzBZlp/ENd+z443uVgIyZxzA9wVbfECjG1ptf7sB8gzSX4Z8dAtoD8d3d68jsLuAfxr+8qyQ==}
+  eslint-plugin-jsdoc@61.4.1:
+    resolution: {integrity: sha512-3c1QW/bV25sJ1MsIvsvW+EtLtN6yZMduw7LVQNVt72y2/5BbV5Pg5b//TE5T48LRUxoEQGaZJejCmcj3wCxBzw==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -3867,12 +3871,12 @@ snapshots:
 
   '@angular-eslint/bundled-angular-compiler@20.6.0': {}
 
-  '@angular-eslint/eslint-plugin-template@20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.46.4)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
+  '@angular-eslint/eslint-plugin-template@20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.48.0)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
       '@angular-eslint/bundled-angular-compiler': 20.6.0
       '@angular-eslint/template-parser': 20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       '@angular-eslint/utils': 20.6.0(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/types': 8.46.4
+      '@typescript-eslint/types': 8.48.0
       '@typescript-eslint/utils': 8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       aria-query: 5.3.2
       axobject-query: 4.1.0
@@ -3888,12 +3892,12 @@ snapshots:
       ts-api-utils: 2.1.0(typescript@5.9.3)
       typescript: 5.9.3
 
-  '@angular-eslint/schematics@20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.46.4)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(chokidar@4.0.3)(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
+  '@angular-eslint/schematics@20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.48.0)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(chokidar@4.0.3)(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
       '@angular-devkit/core': 20.3.10(chokidar@4.0.3)
       '@angular-devkit/schematics': 20.3.10(chokidar@4.0.3)
       '@angular-eslint/eslint-plugin': 20.6.0(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
-      '@angular-eslint/eslint-plugin-template': 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.46.4)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
+      '@angular-eslint/eslint-plugin-template': 20.6.0(@angular-eslint/template-parser@20.6.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(@typescript-eslint/types@8.48.0)(@typescript-eslint/utils@8.46.4(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       ignore: 7.0.5
       semver: 7.7.3
       strip-json-comments: 3.1.1
@@ -4209,7 +4213,7 @@ snapshots:
   '@es-joy/jsdoccomment@0.76.0':
     dependencies:
       '@types/estree': 1.0.8
-      '@typescript-eslint/types': 8.46.4
+      '@typescript-eslint/types': 8.48.0
       comment-parser: 1.4.1
       esquery: 1.6.0
       jsdoc-type-pratt-parser: 6.10.0
@@ -4689,7 +4693,7 @@ snapshots:
 
   '@npmcli/fs@4.0.0':
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   '@npmcli/git@6.0.3':
     dependencies:
@@ -4699,7 +4703,7 @@ snapshots:
       npm-pick-manifest: 10.0.0
       proc-log: 5.0.0
       promise-retry: 2.0.1
-      semver: 7.7.2
+      semver: 7.7.3
       which: 5.0.0
 
   '@npmcli/installed-package-contents@3.0.0':
@@ -4716,7 +4720,7 @@ snapshots:
       hosted-git-info: 8.1.0
       json-parse-even-better-errors: 4.0.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   '@npmcli/promise-spawn@8.0.3':
@@ -4967,7 +4971,7 @@ snapshots:
   '@typescript-eslint/project-service@8.46.4(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.46.4(typescript@5.9.3)
-      '@typescript-eslint/types': 8.46.4
+      '@typescript-eslint/types': 8.48.0
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -4995,6 +4999,8 @@ snapshots:
       - supports-color
 
   '@typescript-eslint/types@8.46.4': {}
+
+  '@typescript-eslint/types@8.48.0': {}
 
   '@typescript-eslint/typescript-estree@8.46.4(typescript@5.9.3)':
     dependencies:
@@ -5727,7 +5733,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsdoc@61.2.0(eslint@9.39.1(jiti@1.21.7)):
+  eslint-plugin-jsdoc@61.4.1(eslint@9.39.1(jiti@1.21.7)):
     dependencies:
       '@es-joy/jsdoccomment': 0.76.0
       '@es-joy/resolve.exports': 1.2.0
@@ -6739,7 +6745,7 @@ snapshots:
       make-fetch-happen: 14.0.3
       nopt: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       tar: 7.5.2
       tinyglobby: 0.2.15
       which: 5.0.0
@@ -6760,7 +6766,7 @@ snapshots:
 
   npm-install-checks@7.1.2:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   npm-normalize-package-bin@4.0.0: {}
 
@@ -6768,7 +6774,7 @@ snapshots:
     dependencies:
       hosted-git-info: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-name: 6.0.2
 
   npm-package-arg@13.0.0:
@@ -6788,7 +6794,7 @@ snapshots:
       npm-install-checks: 7.1.2
       npm-normalize-package-bin: 4.0.0
       npm-package-arg: 12.0.2
-      semver: 7.7.2
+      semver: 7.7.3
 
   npm-registry-fetch@18.0.2:
     dependencies:

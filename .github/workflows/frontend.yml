@@ -23,7 +23,7 @@ jobs:
         node-version: [22.x]
 
     steps:
-      - uses: actions/checkout@v6.0.1
+      - uses: actions/checkout@v6.0.2
 
       - uses: pnpm/action-setup@v4
         with:
